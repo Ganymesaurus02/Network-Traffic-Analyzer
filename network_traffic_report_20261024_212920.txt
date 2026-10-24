@@ -1,0 +1,37 @@
+NETWORK TRAFFIC ANALYZER - TRAFFIC AND SECURITY REPORT
+Generated: 2026-10-24T21:29:20+03:00
+Data source: Synthetic demo data
+
+CAPTURE SUMMARY
+Packets: 476
+Captured bytes: 326115
+Source IP addresses: 8
+Protocol types: 3
+
+PACKETS BY PROTOCOL
+TCP: 313
+UDP: 139
+ICMP: 24
+
+PACKETS BY DIRECTION
+Outgoing: 364
+Incoming: 112
+
+SECURITY FINDINGS: 13
+- Medium | High packet count | source=104.18.32.47 | observed=35 | threshold=30 | This source produced many packets in the selected capture.
+- Medium | High packet count | source=192.168.1.10 | observed=88 | threshold=30 | This source produced many packets in the selected capture.
+- Medium | High packet count | source=192.168.1.12 | observed=87 | threshold=30 | This source produced many packets in the selected capture.
+- Medium | High packet count | source=192.168.1.20 | observed=71 | threshold=30 | This source produced many packets in the selected capture.
+- Medium | High packet count | source=192.168.1.25 | observed=118 | threshold=30 | This source produced many packets in the selected capture.
+- Medium | Many destination ports | source=1.1.1.1 | observed=23 | threshold=15 | This source contacted many different destination ports in the selected capture.
+- Medium | Many destination ports | source=104.18.32.47 | observed=34 | threshold=15 | This source contacted many different destination ports in the selected capture.
+- Medium | Many destination ports | source=142.250.72.14 | observed=24 | threshold=15 | This source contacted many different destination ports in the selected capture.
+- Medium | Many destination ports | source=192.168.1.25 | observed=24 | threshold=15 | This source contacted many different destination ports in the selected capture.
+- Medium | Many destination ports | source=8.8.8.8 | observed=21 | threshold=15 | This source contacted many different destination ports in the selected capture.
+- Medium | High packets per minute | source=192.168.1.25 | observed=28 | threshold=20 | This source produced many packets within one minute of the selected capture.
+- Medium | Repeated TCP connection requests | source=192.168.1.25 | observed=7 | threshold=5 | 7 initial TCP requests from this source to 10.0.0.8:22.0 were captured.
+- Low | Unrecognized non-public source IP | source=192.168.1.25 | observed=118 | threshold=Trusted IP list | This non-public source IP is not on the trusted list; check whether it belongs to a known device.
+
+LIMITATION
+Alerts are explainable heuristic flags for human review, not proof of malicious activity.
+Only packet metadata is analyzed; payload contents are not included in this report.
